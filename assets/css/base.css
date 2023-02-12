@@ -1,0 +1,21 @@
+
+:root {
+    --background-color: #0f0f0f;
+    --white-color: #fff;
+    --text-color: #333;
+    --background-hover-color: #272727;
+    --border-color: #dbdbdb;
+
+    --header-height: 56px;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}

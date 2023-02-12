@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>demo_Youtube</title>
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide header-content">
+                <div class="header_nav_logo">
+                    <div class="header__nav">
+                        <i class="header__nav-icon fa-solid fa-bars"></i>                        
+                    </div>
+                    <div class="header__logo">
+                        <img src="./assets/image/logo_youtube.png" alt="Ảnh Logo Youtube" class="header__logo-img">
+                    </div>
+                </div>
+                <div class="header_search_mic">
+                    <div class="header__search">
+                        <div class="header__search-content">
+                            <input type="search" class="header__search-input" placeholder="Tìm kiếm">
+                            <div class="header__search-keyboard">
+                                <i class="header__keyboard-icon fa-regular fa-keyboard"></i>
+                            </div>
+                        </div>
+                        <div class="header__search-wrap">
+                            <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+                            <div class="header__search-wrap-hover">
+                                <span>Tìm kiếm</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__mic">
+                        <i class="header__mic-icon fa-solid fa-microphone"></i>
+                        <div class="header__mic-hover">
+                           <span> Tìm kiếm bằng giọng nói</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__functions">
+                    <div class="header__functions-creator">
+                        <i class="header__creator-icon fa-solid fa-video"></i>
+                        <div class="header__creator-hover">
+                            <span>Tạo</span>
+                        </div>
+                    </div>
+                    <div class="header__functions-notification">
+                        <i class="header__notification-icon fa-solid fa-bell"></i>
+                        <span class="notifi__number">9</span>
+                        <div class="header__notifi-hover">
+                            <span>Thông báo</span>
+                        </div>
+                    </div>
+                    <div class="header__functions-user">
+                        <img src="./assets/image/user_img.jpg" alt="hình ảnh user" class="header__user-img">
+                    </div>
+                </div>
+        
+            </div>
+        </header>
+        <div class="container">
+            <div class="grid wide">
+                <div class="row sm-gutter">
+                    <div class="col l-2-4">
+                        <div class="category">
+                            <ul class="category-home-list">
+                                <li  class="category-home-item">
+                                    <a href="" class="category-home-link">
+                                        <i class="category-home-link-icon fa-solid fa-house"></i>
+                                       <span class="category-home-link-text">Trang chủ</span>
+                                    </a>
+                                </li>
+                                <li  class="category-home-item">
+                                    <a href="" class="category-home-link">
+                                        <i class="category-home-link-icon fa-brands fa-slack"></i>
+                                       <span class="category-home-link-text">Shorts</span>
+                                    </a>
+                                </li>
+                                <li  class="category-home-item">
+                                    <a href="" class="category-home-link">
+                                        <i class="category-home-link-icon fa-brands fa-youtube"></i>
+                                       <span class="category-home-link-text">Kênh đăng kí</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="category-library-list">
+                                <li  class="category-library-item">
+                                    <a href="" class="category-library-link">
+                                        <i class="category-library-link-icon fa-solid fa-photo-film"></i>
+                                       <span class="category-library-link-text">Thư viện</span>
+                                    </a>
+                                </li>
+                                <li  class="category-library-item">
+                                    <a href="" class="category-library-link">
+                                        <i class="category-library-link-icon fa-solid fa-clock-rotate-left"></i>
+                                       <span class="category-library-link-text">Video đã xem</span>
+                                    </a>
+                                </li>
+                                <li  class="category-library-item">
+                                    <a href="" class="category-library-link">
+                                        <i class="category-library-link-icon fa-solid fa-tv"></i>
+                                       <span class="category-library-link-text">Video của bạn</span>
+                                    </a>
+                                </li>
+                                <li  class="category-library-item">
+                                    <a href="" class="category-library-link">
+                                        <i class="category-library-link-icon fa-solid fa-clock"></i>
+                                       <span class="category-library-link-text">Xem sau</span>
+                                    </a>
+                                </li>
+                                <li  class="category-library-item">
+                                    <a href="" class="category-library-link">
+                                        <i class="category-library-link-icon fa-regular fa-thumbs-up"></i>
+                                       <span class="category-library-link-text">Video đã thích</span>
+                                    </a>
+                                </li>
+                                <li  class="category-library-item">
+                                    <a href="" class="category-library-link">
+                                        <i class="category-library-link-icon fa-solid fa-chevron-down"></i>
+                                       <span class="category-library-link-text">Thêm</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="category-subscribe-list">
+                                <span class="category-subscribe-heading">Kênh đăng ký</span>
+                                <li  class="category-subscribe-item">
+                                    <a href="" class="category-subscribe-link">
+                                        <div class="category-subscribe-icon">
+                                            <img src="./assets/image/f8_img.jpg" alt="" class="category-subscribe-img">
+                                        </div>
+                                       <span class="category-subscribe-link-text">F8 Official</span>
+                                    </a>
+                                </li>
+                                <li  class="category-subscribe-item">
+                                    <a href="" class="category-subscribe-link">
+                                        <div class="category-subscribe-icon">
+                                            <img src="./assets/image/DanFoolish_img.jpg" alt="" class="category-subscribe-img">
+                                        </div>
+                                       <span class="category-subscribe-link-text">Dan Foolish</span>
+                                    </a>
+                                </li>
+                                <li  class="category-subscribe-item">
+                                    <a href="" class="category-subscribe-link">
+                                        <div class="category-subscribe-icon">
+                                            <img src="./assets/image/Duythanhnguyen_img.jpg" alt="" class="category-subscribe-img">
+                                        </div>
+                                       <span class="category-subscribe-link-text">Duy Thanh Nguyen</span>
+                                    </a>
+                                </li>
+                                <li  class="category-subscribe-item">
+                                    <a href="" class="category-subscribe-link">
+                                        <div class="category-subscribe-icon">
+                                            <img src="./assets/image/Hieunguyen_img.jpg" alt="" class="category-subscribe-img">
+                                        </div>
+                                       <span class="category-subscribe-link-text">Hieu Nguyen</span>
+                                    </a>
+                                </li>
+                                <li  class="category-subscribe-item">
+                                    <a href="" class="category-subscribe-link">
+                                        <div class="category-subscribe-icon">
+                                            <img src="" alt="" class="category-subscribe-img">
+                                        </div>
+                                       <span class="category-subscribe-link-text">Hiển thị thêm</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="category-type-list">
+                                <span class="category-type-heading">Khám phá</span>
+                                <li  class="category-type-item">
+                                    <a href="" class="category-type-link">
+                                        <i class="category-type-link-icon fa-solid fa-fire"></i>
+                                       <span class="category-type-link-text">Thịnh hành</span>
+                                    </a>
+                                </li>
+                                <li  class="category-type-item">
+                                    <a href="" class="category-type-link">
+                                        <i class="category-type-link-icon fa-solid fa-music"></i>
+                                       <span class="category-type-link-text">Âm nhạc</span>
+                                    </a>
+                                </li>
+                                <li  class="category-type-item">
+                                    <a href="" class="category-type-link">
+                                        <i class="category-type-link-icon fa-solid fa-gamepad"></i>
+                                       <span class="category-type-link-text">Trò chơi</span>
+                                    </a>
+                                </li>
+                                <li  class="category-type-item">
+                                    <a href="" class="category-type-link">
+                                        <i class="category-type-link-icon fa-solid fa-file"></i>
+                                       <span class="category-type-link-text">Tin tức</span>
+                                    </a>
+                                </li>
+                                <li  class="category-type-item">
+                                    <a href="" class="category-type-link">
+                                        <i class="category-type-link-icon fa-solid fa-trophy"></i>
+                                       <span class="category-type-link-text">Thể thao</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="category-others-list">
+                                <span class="category-others-heading">Dịch vụ khác của Youtube</span>
+                                <li  class="category-others-item">
+                                    <a href="" class="category-others-link">
+                                        <i class="category-others-link-icon fa-brands fa-square-youtube"></i>
+                                       <span class="category-others-link-text">Creator Studio</span>
+                                    </a>
+                                </li>
+                                <li  class="category-others-item">
+                                    <a href="" class="category-others-link">
+                                        <i class="category-others-link-icon fa-solid fa-music"></i>
+                                       <span class="category-others-link-text">Youtube Music</span>
+                                    </a>
+                                </li>
+                                <li  class="category-others-item">
+                                    <a href="" class="category-others-link">
+                                        <i class="category-others-link-icon fa-solid fa-tv"></i>
+                                       <span class="category-others-link-text">Youtube Kids</span>
+                                    </a>
+                                </li>
+                                <li  class="category-others-item">
+                                    <a href="" class="category-others-link">
+                                        <i class="category-others-link-icon fa-solid fa-tv"></i>
+                                       <span class="category-others-link-text">Youtube TV</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="category-function-list">
+                                <li  class="category-function-item">
+                                    <a href="" class="category-function-link">
+                                        <i class="category-function-link-icon fa-solid fa-gear"></i>
+                                       <span class="category-function-link-text">Cài đặt</span>
+                                    </a>
+                                </li>
+                                <li  class="category-function-item">
+                                    <a href="" class="category-function-link">
+                                        <i class="category-function-link-icon fa-solid fa-flag"></i>
+                                       <span class="category-function-link-text">Nhật ký báo cáo</span>
+                                    </a>
+                                </li>
+                                <li  class="category-function-item">
+                                    <a href="" class="category-function-link">
+                                        <i class="category-function-link-icon fa-solid fa-question"></i>
+                                       <span class="category-function-link-text">Trợ giúp</span>
+                                    </a>
+                                </li>
+                                <li  class="category-function-item">
+                                    <a href="" class="category-function-link">
+                                        <i class="category-function-link-icon fa-solid fa-exclamation"></i>
+                                       <span class="category-function-link-text">Gởi ý kiến phản hồi</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="category-footer">
+                                <li class="category-footer-top">
+                                    <a href="">Giới thiệu</a>
+                                    <a href="">Báo chí</a>
+                                    <a href="">Bản quyền</a>
+                                    <a href="">Liên hệ với chúng tôi</a>
+                                    <a href="">Người sáng tạo</a>
+                                    <a href="">Quảng cáo</a>
+                                    <a href="">Nhà phát triển</a>
+                                </li>
+                                <li class="category-footer-top">
+                                    <a href="">Điều khoản</a>
+                                    <a href="">Quyền riêng tư</a>
+                                    <a href="">Chính sách và an toàn</a>
+                                    <a href="">Các Youtube hoạt động</a>
+                                    <a href="">Thử các tính năng mới</a>
+                                </li>
+                                <span>© 2022 Google LLC</span>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col l-9-6">
+                        <div class="sort-bars">
+                            <button class="sort-bars-btn--active">Tất cả</button>
+                            <button class="sort-bars-btn">Danh sách kết hợp</button>
+                            <button class="sort-bars-btn">Trực tiếp</button>
+                            <button class="sort-bars-btn">Trò chơi</button>
+                            <button class="sort-bars-btn">Âm nhạc</button>
+                            <button class="sort-bars-btn">Sách nói</button>
+                            <button class="sort-bars-btn">Hoạt hình</button>
+                            <button class="sort-bars-btn">Đọc rap</button>
+                            <button class="sort-bars-btn">Nấu ăn</button>
+                            <button class="sort-bars-btn">Mới tải lên gần đây</button>
+                            <button class="sort-bars-btn">Đã xem</button>
+                        </div>
+                        <div class="menu-video">
+                            <div class="row">
+                                <div class="col l-3">
+                                    <div class="menu-video-item">
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-1.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/f8_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    Thật Sự Thì Khoa Học Đã Biết Được Gì Về Sự Bất Tử Từ Pháp TU TIÊN Của Đạo Gia
+                                                </div>
+                                                <div class="menu-video-channel">CDTeam-Thế Giới Cổ Đại</div>
+                                                <div class="menu-video-others">60N lượt xem - 7 ngày trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                       
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-2.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/Duythanhnguyen_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    Sự Khác Nhau Giữa Chịu Trách Nhiệm Và Đổ Lỗi. Tại Sao Bạn Không Dám Bứt Phá
+                                                </div>
+                                                <div class="menu-video-channel">NHI LE</div>
+                                                <div class="menu-video-others">988 lượt xem - 1 giờ trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">      
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-4.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/Hieunguyen_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                   Fly Up - VIETSUB
+                                                </div>
+                                                <div class="menu-video-channel">Đức Quý Channel</div>
+                                                <div class="menu-video-others">1tr lượt xem - 3 tuần trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                       
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-5.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/f8_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    [12.02.2023] T1 vs DRX | Ván 2 | Bình Luận Tiếng Việt | LCK Mùa Xuân 2023
+                                                </div>
+                                                <div class="menu-video-channel">lCK Tiếng Việt</div>
+                                                <div class="menu-video-others">86N lượt xem - 8 giờ trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                       
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-7.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/Hieunguyen_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    3 Loại Tài Sản Quan Trọng Trong Tình Yêu
+                                                </div>
+                                                <div class="menu-video-channel">Hieu Nguyen</div>
+                                                <div class="menu-video-others">19N lượt xem - 6 giờ trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                       
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-8.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/user_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    One Direction - Night Changes (Lyrics) | Glimpse of Us, Angle Baby
+                                                </div>
+                                                <div class="menu-video-channel">H lyrics</div>
+                                                <div class="menu-video-others">628N lượt xem - 2 ngày trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                       
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-9.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/f8_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    Giải Mã Thông Điệp Cuộc Đời - Tri Kỉ Cảm Xúc Web5ngay
+                                                </div>
+                                                <div class="menu-video-channel">Web5ngay</div>
+                                                <div class="menu-video-others">84N lượt xem - 4 tháng trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                        
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-10.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/mrx8_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    Sống Hơn 1000 Năm?! | KENJAKU Độc Ác Đế Cỡ Nào? | JUJUTSU KAISEN
+                                                </div>
+                                                <div class="menu-video-channel">Pen Channel</div>
+                                                <div class="menu-video-others">45N lượt xem - 8 tháng trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                        
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-11.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/user_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    Until I Found You - Stephen Sanchez(Lyrics) | Taylor Swift, Ed Sheeran,...
+                                                </div>
+                                                <div class="menu-video-channel">Đức Quý Channel</div>
+                                                <div class="menu-video-others">218N lượt xem - 2 ngày trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                       
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-12.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/user_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                   NF - I Hate Myself (Music Video)
+                                                </div>
+                                                <div class="menu-video-channel">Đức Quý Channel</div>
+                                                <div class="menu-video-others">36N lượt xem - 10 tháng trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                        
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-13.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/Hieunguyen_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    5 Kiểu Người Đi Đâu Cũng Bị Ghét (Nhiều Khi Vô Tình Bị Mà Không Biết)
+                                                </div>
+                                                <div class="menu-video-channel">Web5ngay</div>
+                                                <div class="menu-video-others">413N lượt xem - 3 tháng trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                        
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-14.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/user_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    Nhạc Chill Nhẹ Nhàng - Yêu Người Có Ước Mơ (Lofi ver.)
+                                                </div>
+                                                <div class="menu-video-channel">Đức Quý Channel</div>
+                                                <div class="menu-video-others">85N lượt xem - 3 tuần trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-1.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/f8_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    Thật Sự Thì Khoa Học Đã Biết Được Gì Về Sự Bất Tử Từ Pháp TU TIÊN Của Đạo Gia
+                                                </div>
+                                                <div class="menu-video-channel">CDTeam-Thế Giới Cổ Đại</div>
+                                                <div class="menu-video-others">60N lượt xem - 7 ngày trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                       
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-2.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/Duythanhnguyen_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    Sự Khác Nhau Giữa Chịu Trách Nhiệm Và Đổ Lỗi. Tại Sao Bạn Không Dám Bứt Phá
+                                                </div>
+                                                <div class="menu-video-channel">NHI LE</div>
+                                                <div class="menu-video-others">988 lượt xem - 1 giờ trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">      
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-4.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/Hieunguyen_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                   Fly Up - VIETSUB
+                                                </div>
+                                                <div class="menu-video-channel">Đức Quý Channel</div>
+                                                <div class="menu-video-others">1tr lượt xem - 3 tuần trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                       
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-5.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/f8_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    [12.02.2023] T1 vs DRX | Ván 2 | Bình Luận Tiếng Việt | LCK Mùa Xuân 2023
+                                                </div>
+                                                <div class="menu-video-channel">lCK Tiếng Việt</div>
+                                                <div class="menu-video-others">86N lượt xem - 8 giờ trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                       
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-7.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/Hieunguyen_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    3 Loại Tài Sản Quan Trọng Trong Tình Yêu
+                                                </div>
+                                                <div class="menu-video-channel">Hieu Nguyen</div>
+                                                <div class="menu-video-others">19N lượt xem - 6 giờ trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                       
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-8.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/user_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    One Direction - Night Changes (Lyrics) | Glimpse of Us, Angle Baby
+                                                </div>
+                                                <div class="menu-video-channel">H lyrics</div>
+                                                <div class="menu-video-others">628N lượt xem - 2 ngày trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                       
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-9.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/f8_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    Giải Mã Thông Điệp Cuộc Đời - Tri Kỉ Cảm Xúc Web5ngay
+                                                </div>
+                                                <div class="menu-video-channel">Web5ngay</div>
+                                                <div class="menu-video-others">84N lượt xem - 4 tháng trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col l-3">
+                                    <div class="menu-video-item">                                        
+                                        <div class="menu-video-img">
+                                            <img src="./assets/image/video-img-10.png" alt="" class="video-img">
+                                        </div>
+                                        <div class="menu-video-main">
+                                            <div class="menu-video-logo">
+                                                <div class="video-logo">
+                                                    <img src="./assets/image/mrx8_img.jpg" alt="" class="video-logo-img">
+                                                </div>
+                                            </div>
+                                            <div class="menu-video-text">
+                                                <div class="menu-video-title">
+                                                    Sống Hơn 1000 Năm?! | KENJAKU Độc Ác Đế Cỡ Nào? | JUJUTSU KAISEN
+                                                </div>
+                                                <div class="menu-video-channel">Pen Channel</div>
+                                                <div class="menu-video-others">45N lượt xem - 8 tháng trước</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
